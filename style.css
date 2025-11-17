@@ -1,0 +1,81 @@
+/* Style minimaliste violet doré avec étoiles et lunes */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #2B0A3D url('https://i.imgur.com/U5T7Z0t.png') repeat; /* fond avec étoiles si tu veux */
+    color: #F5D76E;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(75, 0, 130, 0.8);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.product {
+    background: rgba(75, 0, 130, 0.6);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 10px #F5D76E;
+    position: relative;
+}
+
+.product::before {
+    content: "🌙";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+}
+
+.product h2 {
+    margin: 0.5rem 0;
+}
+
+.price {
+    display: block;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input[type="submit"] {
+    padding: 0.6rem 1.2rem;
+    background: #F5D76E;
+    border: none;
+    border-radius: 8px;
+    color: #2B0A3D;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #FFD700;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(75, 0, 130, 0.8);
+}
